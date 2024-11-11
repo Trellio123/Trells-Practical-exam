@@ -24,26 +24,35 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create 2 Virtual Machine using Azure
+- Install Active Directory on One Virtual Machine
+- Create Admin and User Account in Active Directory
+- Join the domain using the other Virtual Machine
+- Configue Remote Desktop for non-administrative users on VM 2
+- Create addintional users and log into VM 2 with one of the users
 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/IymFWZG.png"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+First create both Virtual Machines using Windows 2022 Datacenter.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/PUbNuYb.png"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Log into VM-1 and download Active Directory Domain Services
+</p>
+<p>
+  <img src="https://imgur.com/3F844y3.png"/>
+</p>
+<p>
+  On the top right click the flag and promote server to domain controller.
+  After that click add forest as mydomain.com and restart VM as mydomain.com/(whatever you named your VM-1)
 </p>
 <br />
 
