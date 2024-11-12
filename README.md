@@ -8,7 +8,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
+- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com/watch?v=OQjK4gC89Xc)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -89,4 +89,22 @@ Login to VM-2, go to about pc settings> rename PC> Change domain> use the employ
 <p>
   Log into VM-2 using your mydomain.com\ credentials, open system properties, click remote desktop, allow domain users access to remote desktop.
 </p>
+<br>
+<p>
+  <img src="https://imgur.com/dwvpU1M.png" />
+</p>
+<p>
+  After logging back into VM-1 (using the same mydomain.com access) we will create a bunch of employees (users) with a script inside of powershell(run as admin).
+  Go to Active Directory Users and Computers to confirm accounts being made.
+</p>
+
+<br/>
+<br>
+<p>
+<img src="https://imgur.com/iO0KwUj.png" />
+</p>
+<p>
+  Attempt to login using one fo the accounts made to verify all things are running smoothly.
+</p>
+<br/>
 
