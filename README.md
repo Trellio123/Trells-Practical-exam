@@ -37,7 +37,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/IymFWZG.png"/>
 </p>
 <p>
-First create both Virtual Machines using Windows 2022 Datacenter.
+First create 2 Virtual Machines using Windows 2022 Datacenter.
+For this project I will refer to them as VM-1 and VM-2
 Also set VM-2 DNS settings to VM-1 private IP Address
 </p>
 <br />
@@ -80,7 +81,12 @@ Login to VM-2, go to about pc settings> rename PC> Change domain> use the employ
 <p>
   Log back into VM-1 as the domain controller and verify that VM-2 is in the Computer folder
 </p>
-
-
 <br/>
+<br>
+<p>
+  <img src="https://imgur.com/tjMgWom.png" />
+</p>
+<p>
+  Log into VM-2 using your mydomain.com\ credentials, open system properties, click remote desktop, allow domain users access to remote desktop.
+</p>
 
