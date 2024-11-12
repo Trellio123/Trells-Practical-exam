@@ -38,6 +38,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 First create both Virtual Machines using Windows 2022 Datacenter.
+Also set VM-2 DNS settings to VM-1 private IP Address
 </p>
 <br />
 
@@ -57,9 +58,29 @@ Log into VM-1 and download Active Directory Domain Services
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/F6KnDQz.png"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Active Directory Users and Computers ,create 2 Organizational Units called "_EMPLOYEES" and "Admins"
+Create an employee (in the employee folder) with a name, add it to "Domain Admins" and remember the login information.
+Log out of VM and log back in using the employee login info.
+</p>
+<br>
+<p>
+<img src="https://imgur.com/LEYTa4S.png" />
+</p>
+<p>
+Login to VM-2, go to about pc settings> rename PC> Change domain> use the employee login, and let the VM-2 restart
 </p>
 <br />
+<br>
+<p>
+  <img src="https://imgur.com/qCFBa22.png" />
+</p>
+<p>
+  Log back into VM-1 as the domain controller and verify that VM-2 is in the Computer folder
+</p>
+
+
+<br/>
+
